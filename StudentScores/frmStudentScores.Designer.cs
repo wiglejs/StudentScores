@@ -45,6 +45,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
@@ -106,6 +108,7 @@
             // 
             // lblScoreTotal
             // 
+            this.lblScoreTotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblScoreTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblScoreTotal.Location = new System.Drawing.Point(80, 110);
             this.lblScoreTotal.Name = "lblScoreTotal";
@@ -114,6 +117,7 @@
             // 
             // label3
             // 
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Location = new System.Drawing.Point(80, 147);
             this.label3.Name = "label3";
@@ -131,6 +135,7 @@
             // 
             // lblAverage
             // 
+            this.lblAverage.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblAverage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAverage.Location = new System.Drawing.Point(80, 186);
             this.lblAverage.Name = "lblAverage";
@@ -150,7 +155,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 240);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(358, 237);
             this.Controls.Add(this.lblAverage);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
