@@ -170,6 +170,7 @@
             this.Controls.Add(this.lstStudents);
             this.Controls.Add(this.label1);
             this.Name = "frmStudentScores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Scores";
             this.ResumeLayout(false);
             this.PerformLayout();
