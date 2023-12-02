@@ -105,6 +105,7 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "&Add Score";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnClear
             // 
@@ -117,6 +118,7 @@
             this.btnClear.TabIndex = 7;
             this.btnClear.Text = "Clear &Scores";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnCancel
             // 
@@ -130,6 +132,7 @@
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
@@ -143,6 +146,7 @@
             this.btnOK.TabIndex = 9;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // frmAddNewStudent
             // 
