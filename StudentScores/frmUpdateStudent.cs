@@ -84,5 +84,36 @@ namespace StudentScores
                 }
             }
         }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (scoreList.Count >0)
+            {
+                scoreList.RemoveAt(lstStudentScores.SelectedIndex);
+                DisplayScores();
+            }
+        }
+
+        private void btnClearScores_Click(object sender, EventArgs e)
+        {
+            scoreList.Clear();
+            lstStudentScores.Items.Clear();
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            string studentScores = lblName.Text;
+            foreach (int score in scoreList)
+            {
+                studentScores += $"|{score}";
+            }
+            Tag = studentScores;
+            DialogResult = DialogResult.OK;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -104,6 +104,7 @@
             this.btnRemove.TabIndex = 6;
             this.btnRemove.Text = "&Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnClearScores
             // 
@@ -113,6 +114,7 @@
             this.btnClearScores.TabIndex = 7;
             this.btnClearScores.Text = "Clear &Scores";
             this.btnClearScores.UseVisualStyleBackColor = true;
+            this.btnClearScores.Click += new System.EventHandler(this.btnClearScores_Click);
             // 
             // btnOK
             // 
@@ -122,6 +124,7 @@
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
@@ -132,6 +135,7 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmUpdateStudent
             // 
