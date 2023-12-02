@@ -35,9 +35,9 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblScoreTotal = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblScoreCount = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblCount = new System.Windows.Forms.Label();
+            this.lable3 = new System.Windows.Forms.Label();
             this.lblAverage = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -60,6 +60,7 @@
             this.lstStudents.Name = "lstStudents";
             this.lstStudents.Size = new System.Drawing.Size(250, 82);
             this.lstStudents.TabIndex = 1;
+            this.lstStudents.SelectedIndexChanged += new System.EventHandler(this.lstStudents_SelectedIndexChanged);
             // 
             // btnAddNew
             // 
@@ -87,6 +88,7 @@
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnExit
             // 
@@ -96,6 +98,7 @@
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label2
             // 
@@ -106,32 +109,32 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Score Total";
             // 
-            // lblScoreTotal
+            // lblTotal
             // 
-            this.lblScoreTotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblScoreTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblScoreTotal.Location = new System.Drawing.Point(80, 110);
-            this.lblScoreTotal.Name = "lblScoreTotal";
-            this.lblScoreTotal.Size = new System.Drawing.Size(100, 26);
-            this.lblScoreTotal.TabIndex = 7;
+            this.lblTotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTotal.Location = new System.Drawing.Point(80, 110);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(100, 26);
+            this.lblTotal.TabIndex = 7;
             // 
-            // label3
+            // lblCount
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(80, 147);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 27);
-            this.label3.TabIndex = 9;
+            this.lblCount.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCount.Location = new System.Drawing.Point(80, 147);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(100, 27);
+            this.lblCount.TabIndex = 9;
             // 
-            // lblScoreCount
+            // lable3
             // 
-            this.lblScoreCount.AutoSize = true;
-            this.lblScoreCount.Location = new System.Drawing.Point(8, 147);
-            this.lblScoreCount.Name = "lblScoreCount";
-            this.lblScoreCount.Size = new System.Drawing.Size(66, 13);
-            this.lblScoreCount.TabIndex = 8;
-            this.lblScoreCount.Text = "Score Count";
+            this.lable3.AutoSize = true;
+            this.lable3.Location = new System.Drawing.Point(8, 147);
+            this.lable3.Name = "lable3";
+            this.lable3.Size = new System.Drawing.Size(66, 13);
+            this.lable3.TabIndex = 8;
+            this.lable3.Text = "Score Count";
             // 
             // lblAverage
             // 
@@ -159,9 +162,9 @@
             this.ClientSize = new System.Drawing.Size(358, 237);
             this.Controls.Add(this.lblAverage);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblScoreCount);
-            this.Controls.Add(this.lblScoreTotal);
+            this.Controls.Add(this.lblCount);
+            this.Controls.Add(this.lable3);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
@@ -172,6 +175,7 @@
             this.Name = "frmStudentScores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Scores";
+            this.Load += new System.EventHandler(this.frmStudentScores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,9 +190,9 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblScoreTotal;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblScoreCount;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblCount;
+        private System.Windows.Forms.Label lable3;
         private System.Windows.Forms.Label lblAverage;
         private System.Windows.Forms.Label label6;
     }
