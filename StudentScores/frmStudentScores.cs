@@ -101,7 +101,7 @@ namespace StudentScores
         private void btnAddNew_Click(object sender, EventArgs e)
         {
             Form addForm = new frmAddNewStudent();
-            DialogResult result = addFrom.ShowDialog();
+            DialogResult result = addForm.ShowDialog();
 
             if (result == DialogResult.OK)
             {
